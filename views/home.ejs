@@ -1,0 +1,82 @@
+<%- include ('./partials/head.ejs') %>
+<header>
+  <ul>
+    <li class="addButton">
+      <button id="addButton">+</button>
+    </li>
+  </ul>
+  <nav>
+    <ul>
+      <li>
+        <button>Users</button>
+      </li>
+      <li>
+        <button>Friends</button>
+      </li>
+      <li>
+        <button>Items per day</button>
+      </li>
+      <li>
+        <button>More</button>
+      </li>
+    </ul>
+    <button id="resetButton">Reset</button>
+    <button id="runSim">Run</button>
+  </nav>
+</header>
+<p class="steps">Step 1</p>
+
+<main>
+  <aside id="parameters">
+    <div class="parameter card paramItem hidden">
+      <label> Number of users:</label>
+      <input type="range" min="2" max="500" />
+    </div>
+    <div class="parameter card paramItem hidden">
+      <label> Number of friends:</label>
+      <input type="range" min="2" max="500" />
+    </div>
+    <div class="parameter card paramItem hidden">
+      <label> Number of items send:</label>
+      <input type="range" min="2" max="500" />
+    </div>
+    <div class="card hidden">
+      <div class="parameter paramItem">
+        <label> Number of users:</label>
+        <input type="range" min="2" max="500" />
+      </div>
+      <div class="parameter paramItem">
+        <label> Number of users:</label>
+        <input type="range" min="2" max="500" />
+      </div>
+      <div class="parameter paramItem">
+        <label> Number of users:</label>
+        <input type="range" min="2" max="500" />
+      </div>
+      <div class="parameter paramItem">
+        <label> Number of users:</label>
+        <input type="range" min="2" max="500" />
+      </div>
+      <div class="parameter paramItem">
+        <label> Number of users:</label>
+        <input type="range" min="2" max="500" />
+      </div>
+      <div class="parameter paramItem">
+        <label> Number of users:</label>
+        <input type="range" min="2" max="500" />
+      </div>
+      <div class="parameter paramItem">
+        <label> Number of users:</label>
+        <input type="range" min="2" max="500" />
+      </div>
+    </div>
+  </aside>
+  <figure id="graph"></figure>
+  <!-- <div id="my_dataviz"></div> -->
+
+  <aside id="zoom">
+    <button id="darkmode"></button>
+    <button id="downloadSVG"></button>
+  </aside>
+</main>
+<%- include ('./partials/footer.ejs') %>
